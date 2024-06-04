@@ -1,0 +1,31 @@
+package tests;
+import clases.Maximos;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import clases.Maximos;
+class TestMaximos {
+
+	
+	@Test
+	void test1() {
+		
+		int valoresperado = 2;
+		int valorobtenido = Maximos.maximoDe2EnterosPositivos(1,2);
+		assertEquals(valoresperado, valorobtenido);
+	}
+	@Test
+	void test2() {
+		
+		int valoresperado = 2;
+		int valorobtenido = Maximos.maximoDe2EnterosPositivos(2,1);
+		assertEquals(valoresperado, valorobtenido);
+	}
+	@Test
+	void test3() {
+		
+		int valoresperado = 1;
+		int valorobtenido = Maximos.maximoDe2EnterosPositivos(1,1);
+		assertEquals(valoresperado, valorobtenido);
+	}
+}
